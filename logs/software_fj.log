@@ -1,0 +1,226 @@
+2026-11-19 02:05:11,652 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:11,653 | INFO | Servicio registrado: S001 (Sala A)
+2026-11-19 02:05:11,653 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:11,653 | INFO | Servicio registrado: S002 (Sala A)
+2026-11-19 02:05:11,654 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:11,654 | INFO | Servicio registrado: S003 (Sala A)
+2026-11-19 02:05:11,655 | INFO | Disponibilidad de S003 cambiada a False
+2026-11-19 02:05:11,655 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:11,655 | INFO | Servicio registrado: S004 (Sala A)
+2026-11-19 02:05:11,655 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:11,656 | INFO | Servicio registrado: S005 (Sala A)
+2026-11-19 02:05:11,656 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:11,656 | INFO | Servicio registrado: S007 (Sala A)
+2026-11-19 02:05:11,656 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:11,656 | INFO | Servicio registrado: S008 (Sala A)
+2026-11-19 02:05:11,656 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:11,656 | INFO | Servicio registrado: S009 (Sala A)
+2026-11-19 02:05:11,656 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:11,656 | INFO | Servicio registrado: S010 (Sala A)
+2026-11-19 02:05:11,657 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:11,657 | INFO | Servicio registrado: S011 (Sala A)
+2026-11-19 02:05:11,657 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:11,657 | INFO | Servicio registrado: S015 (Sala A)
+2026-11-19 02:05:11,657 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:11,657 | INFO | Servicio registrado: S016 (Sala A)
+2026-11-19 02:05:41,860 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:41,861 | INFO | Servicio registrado: S001 (Sala A)
+2026-11-19 02:05:41,861 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:41,861 | INFO | Servicio registrado: S002 (Sala A)
+2026-11-19 02:05:41,861 | INFO | Reserva creada: R001, cliente=12345678, servicio=S002, total=200000.00
+2026-11-19 02:05:41,861 | INFO | Reserva R001 cancelada
+2026-11-19 02:05:41,861 | INFO | Reserva creada: R002, cliente=12345678, servicio=S002, total=100000.00
+2026-11-19 02:05:41,862 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:41,862 | INFO | Servicio registrado: S003 (Sala A)
+2026-11-19 02:05:41,862 | INFO | Disponibilidad de S003 cambiada a False
+2026-11-19 02:05:41,862 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:41,862 | INFO | Servicio registrado: S004 (Sala A)
+2026-11-19 02:05:41,862 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:41,862 | INFO | Servicio registrado: S005 (Sala A)
+2026-11-19 02:05:41,862 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:41,862 | INFO | Servicio registrado: S007 (Sala A)
+2026-11-19 02:05:41,862 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:41,863 | INFO | Servicio registrado: S008 (Sala A)
+2026-11-19 02:05:41,863 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:41,863 | INFO | Servicio registrado: S009 (Sala A)
+2026-11-19 02:05:41,863 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:41,863 | INFO | Servicio registrado: S010 (Sala A)
+2026-11-19 02:05:41,863 | INFO | Reserva creada: R003, cliente=12345678, servicio=S010, total=200000.00
+2026-11-19 02:05:41,863 | INFO | Reserva R003 confirmada
+2026-11-19 02:05:41,863 | INFO | Reserva R003 procesada
+2026-11-19 02:05:41,863 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:41,863 | INFO | Servicio registrado: S011 (Sala A)
+2026-11-19 02:05:41,863 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:41,863 | INFO | Servicio registrado: S015 (Sala A)
+2026-11-19 02:05:41,863 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:41,864 | INFO | Servicio registrado: S016 (Sala A)
+2026-11-19 02:05:43,565 | INFO | Cliente registrado: 12345678
+2026-11-19 02:05:43,565 | INFO | DEMO CORRECTA | 01 Registrar cliente correcto
+2026-11-19 02:05:43,565 | INFO | DEMO FINALIZADA | 01 Registrar cliente correcto
+2026-11-19 02:05:43,565 | ERROR | DEMO FALLIDA | 02 Registrar cliente con correo inválido
+Traceback (most recent call last):
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 14, in operar
+    salida = accion()
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 27, in <lambda>
+    operar('02 Registrar cliente con correo inválido', lambda: sistema.registrar_cliente('87654321', 'Luis Rojas', 'correo_invalido', '3001234567'))
+                                                               ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/Software_FJ/software_fj/sistema.py", line 27, in registrar_cliente
+    cliente = Cliente(documento, nombre, correo, telefono)
+  File "/mnt/data/Software_FJ/software_fj/modelos.py", line 53, in __init__
+    self.correo = correo
+    ^^^^^^^^^^^
+  File "/mnt/data/Software_FJ/software_fj/modelos.py", line 88, in correo
+    raise ErrorValidacion('Correo: dirección de email inválida.')
+software_fj.excepciones.ErrorValidacion: Correo: dirección de email inválida.
+2026-11-19 02:05:43,567 | INFO | DEMO FINALIZADA | 02 Registrar cliente con correo inválido
+2026-11-19 02:05:43,567 | ERROR | DEMO FALLIDA | 03 Registrar cliente duplicado
+Traceback (most recent call last):
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 14, in operar
+    salida = accion()
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 28, in <lambda>
+    operar('03 Registrar cliente duplicado', lambda: sistema.registrar_cliente('12345678', 'Otra Ana', 'otra@correo.com', '3001234567'))
+                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/Software_FJ/software_fj/sistema.py", line 29, in registrar_cliente
+    raise ClienteDuplicado(f'El documento {cliente.documento} ya está registrado.')
+software_fj.excepciones.ClienteDuplicado: El documento 12345678 ya está registrado.
+2026-11-19 02:05:43,567 | INFO | DEMO FINALIZADA | 03 Registrar cliente duplicado
+2026-11-19 02:05:43,567 | INFO | Cliente registrado: 12345999
+2026-11-19 02:05:43,567 | INFO | DEMO CORRECTA | 04 Registrar segundo cliente
+2026-11-19 02:05:43,567 | INFO | DEMO FINALIZADA | 04 Registrar segundo cliente
+2026-11-19 02:05:43,567 | INFO | Servicio registrado: S001 (Sala Ejecutiva)
+2026-11-19 02:05:43,567 | INFO | DEMO CORRECTA | 05 Crear sala válida
+2026-11-19 02:05:43,568 | INFO | DEMO FINALIZADA | 05 Crear sala válida
+2026-11-19 02:05:43,568 | INFO | Servicio registrado: S002 (Proyector 4K)
+2026-11-19 02:05:43,568 | INFO | DEMO CORRECTA | 06 Crear equipo válido
+2026-11-19 02:05:43,568 | INFO | DEMO FINALIZADA | 06 Crear equipo válido
+2026-11-19 02:05:43,568 | INFO | Servicio registrado: S003 (Transformación digital)
+2026-11-19 02:05:43,568 | INFO | DEMO CORRECTA | 07 Crear asesoría válida
+2026-11-19 02:05:43,568 | INFO | DEMO FINALIZADA | 07 Crear asesoría válida
+2026-11-19 02:05:43,568 | ERROR | DEMO FALLIDA | 08 Crear servicio con tarifa inválida
+Traceback (most recent call last):
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 14, in operar
+    salida = accion()
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 36, in <lambda>
+    operar('08 Crear servicio con tarifa inválida', lambda: sistema.registrar_servicio(Sala('Sala Invalida', '-100', 10)))
+                                                                                       ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/Software_FJ/software_fj/modelos.py", line 182, in __init__
+    super().__init__(nombre, tarifa_hora, capacidad=1)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/Software_FJ/software_fj/modelos.py", line 116, in __init__
+    self.__tarifa = numero_positivo(tarifa, 'Tarifa')
+                    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/Software_FJ/software_fj/modelos.py", line 22, in numero_positivo
+    raise ErrorValidacion(f'{campo}: valor fuera del rango permitido.')
+software_fj.excepciones.ErrorValidacion: Tarifa: valor fuera del rango permitido.
+2026-11-19 02:05:43,568 | INFO | DEMO FINALIZADA | 08 Crear servicio con tarifa inválida
+2026-11-19 02:05:43,568 | INFO | Reserva creada: R001, cliente=12345678, servicio=S001, total=142800.00
+2026-11-19 02:05:43,568 | INFO | DEMO CORRECTA | 09 Crear reserva de sala válida
+2026-11-19 02:05:43,568 | INFO | DEMO FINALIZADA | 09 Crear reserva de sala válida
+2026-11-19 02:05:43,568 | ERROR | DEMO FALLIDA | 10 Rechazar reserva con cliente inexistente
+Traceback (most recent call last):
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 14, in operar
+    salida = accion()
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 39, in <lambda>
+    operar('10 Rechazar reserva con cliente inexistente', lambda: sistema.crear_reserva('00000000', ids['sala'], '2'))
+                                                                  ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/Software_FJ/software_fj/sistema.py", line 66, in crear_reserva
+    cliente = self.buscar_cliente(documento)
+  File "/mnt/data/Software_FJ/software_fj/sistema.py", line 45, in buscar_cliente
+    None) or self._no_encontrado('Cliente', documento)
+             ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/Software_FJ/software_fj/sistema.py", line 57, in _no_encontrado
+    raise EntidadNoEncontrada(f'{tipo} {identificador} no encontrado.')
+software_fj.excepciones.EntidadNoEncontrada: Cliente 00000000 no encontrado.
+2026-11-19 02:05:43,569 | INFO | DEMO FINALIZADA | 10 Rechazar reserva con cliente inexistente
+2026-11-19 02:05:43,569 | ERROR | DEMO FALLIDA | 11 Rechazar reserva por falta de cupo
+Traceback (most recent call last):
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 14, in operar
+    salida = accion()
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 40, in <lambda>
+    operar('11 Rechazar reserva por falta de cupo', lambda: sistema.crear_reserva('12345999', ids['sala'], '1'))
+                                                            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/Software_FJ/software_fj/sistema.py", line 69, in crear_reserva
+    self._validar_cupo(servicio)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/mnt/data/Software_FJ/software_fj/sistema.py", line 63, in _validar_cupo
+    raise ServicioNoDisponible(f'{servicio.nombre}: no hay cupos libres ({ocupadas}/{servicio.capacidad}).')
+software_fj.excepciones.ServicioNoDisponible: Sala Ejecutiva: no hay cupos libres (1/1).
+2026-11-19 02:05:43,569 | INFO | DEMO FINALIZADA | 11 Rechazar reserva por falta de cupo
+2026-11-19 02:05:43,569 | INFO | Reserva R001 confirmada
+2026-11-19 02:05:43,569 | INFO | DEMO CORRECTA | 12 Confirmar reserva
+2026-11-19 02:05:43,569 | INFO | DEMO FINALIZADA | 12 Confirmar reserva
+2026-11-19 02:05:43,569 | ERROR | DEMO FALLIDA | 13 Rechazar confirmación repetida
+Traceback (most recent call last):
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 14, in operar
+    salida = accion()
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 42, in <lambda>
+    operar('13 Rechazar confirmación repetida', lambda: sistema.confirmar_reserva(ids['reserva_sala']))
+                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/Software_FJ/software_fj/sistema.py", line 78, in confirmar_reserva
+    reserva.confirmar()
+    ~~~~~~~~~~~~~~~~~^^
+  File "/mnt/data/Software_FJ/software_fj/modelos.py", line 292, in confirmar
+    raise OperacionNoPermitida(f'No se puede confirmar una reserva {self.estado}.')
+software_fj.excepciones.OperacionNoPermitida: No se puede confirmar una reserva CONFIRMADA.
+2026-11-19 02:05:43,570 | INFO | DEMO FINALIZADA | 13 Rechazar confirmación repetida
+2026-11-19 02:05:43,570 | INFO | Reserva R001 procesada
+2026-11-19 02:05:43,570 | INFO | DEMO CORRECTA | 14 Procesar reserva confirmada
+2026-11-19 02:05:43,570 | INFO | DEMO FINALIZADA | 14 Procesar reserva confirmada
+2026-11-19 02:05:43,570 | ERROR | DEMO FALLIDA | 15 Rechazar cancelación procesada
+Traceback (most recent call last):
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 14, in operar
+    salida = accion()
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 44, in <lambda>
+    operar('15 Rechazar cancelación procesada', lambda: sistema.cancelar_reserva(ids['reserva_sala']))
+                                                        ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/Software_FJ/software_fj/sistema.py", line 83, in cancelar_reserva
+    reserva.cancelar()
+    ~~~~~~~~~~~~~~~~^^
+  File "/mnt/data/Software_FJ/software_fj/modelos.py", line 299, in cancelar
+    raise OperacionNoPermitida(f'No se puede cancelar una reserva {self.estado}.')
+software_fj.excepciones.OperacionNoPermitida: No se puede cancelar una reserva PROCESADA.
+2026-11-19 02:05:43,570 | INFO | DEMO FINALIZADA | 15 Rechazar cancelación procesada
+2026-11-19 02:05:43,571 | INFO | Reserva creada: R002, cliente=12345999, servicio=S002, total=121500.00
+2026-11-19 02:05:43,571 | INFO | DEMO CORRECTA | 16 Crear reserva de equipo con descuento
+2026-11-19 02:05:43,571 | INFO | DEMO FINALIZADA | 16 Crear reserva de equipo con descuento
+2026-11-19 02:05:43,571 | INFO | Reserva R002 cancelada
+2026-11-19 02:05:43,571 | INFO | DEMO CORRECTA | 17 Cancelar reserva de equipo
+2026-11-19 02:05:43,571 | INFO | DEMO FINALIZADA | 17 Cancelar reserva de equipo
+2026-11-19 02:05:43,571 | ERROR | DEMO FALLIDA | 18 Rechazar duración fraccionaria para equipo
+Traceback (most recent call last):
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 14, in operar
+    salida = accion()
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 48, in <lambda>
+    operar('18 Rechazar duración fraccionaria para equipo', lambda: sistema.crear_reserva('12345999', ids['equipo'], '1.5'))
+                                                                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/Software_FJ/software_fj/sistema.py", line 70, in crear_reserva
+    reserva = Reserva(cliente, servicio, duracion, impuesto=impuesto, descuento=descuento)
+  File "/mnt/data/Software_FJ/software_fj/modelos.py", line 258, in __init__
+    self.__duracion = servicio.validar_parametros(duracion)
+                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/mnt/data/Software_FJ/software_fj/modelos.py", line 212, in validar_parametros
+    raise ReservaInvalida('Los equipos se alquilan entre 1 y 30 días enteros.')
+software_fj.excepciones.ReservaInvalida: Los equipos se alquilan entre 1 y 30 días enteros.
+2026-11-19 02:05:43,572 | INFO | DEMO FINALIZADA | 18 Rechazar duración fraccionaria para equipo
+2026-11-19 02:05:43,572 | INFO | Reserva creada: R003, cliente=12345678, servicio=S003, total=135000.00
+2026-11-19 02:05:43,572 | INFO | DEMO CORRECTA | 19 Crear reserva de asesoría
+2026-11-19 02:05:43,572 | INFO | DEMO FINALIZADA | 19 Crear reserva de asesoría
+2026-11-19 02:05:43,572 | ERROR | DEMO FALLIDA | 20 Rechazar impuesto excesivo
+Traceback (most recent call last):
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 14, in operar
+    salida = accion()
+  File "/mnt/data/Software_FJ/software_fj/demo.py", line 50, in <lambda>
+    operar('20 Rechazar impuesto excesivo', lambda: sistema.crear_reserva('12345999', ids['equipo'], '2', impuesto=101))
+                                                    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/Software_FJ/software_fj/sistema.py", line 70, in crear_reserva
+    reserva = Reserva(cliente, servicio, duracion, impuesto=impuesto, descuento=descuento)
+  File "/mnt/data/Software_FJ/software_fj/modelos.py", line 259, in __init__
+    self.__costo = servicio.calcular_costo(self.__duracion, impuesto=impuesto, descuento=descuento)
+                   ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/Software_FJ/software_fj/modelos.py", line 217, in calcular_costo
+    return self._ajustar_costo(self.tarifa * dias, impuesto=impuesto, descuento=descuento)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/data/Software_FJ/software_fj/modelos.py", line 168, in _ajustar_costo
+    raise ErrorCalculo('Impuesto y descuento deben estar entre 0 y 100 %.')
+software_fj.excepciones.ErrorCalculo: Impuesto y descuento deben estar entre 0 y 100 %.
+2026-11-19 02:05:43,573 | INFO | DEMO FINALIZADA | 20 Rechazar impuesto excesivo
